@@ -1,0 +1,8 @@
+/out/
+/target/
+/.idea/
+/.settings/
+/src/test/
+/src/.DS_Store
+.DS_Store
+IntelligentMattress.iml

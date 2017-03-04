@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="intelligent_mattress" match-name="behavior_booking"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="behavior_operate_record"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="behavior_sleep_analysis"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="behavior_sleep_habits"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="device_info"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="knowledge_info"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="label"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="product_info"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="user_bind_device"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="user_customer_info"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="user_customer_platform"/>
+  <table-filter match-catalog="intelligent_mattress" match-name="user_manager_info"/>
+</hibernate-reverse-engineering>
