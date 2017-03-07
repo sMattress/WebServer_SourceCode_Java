@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 
 public class CacheUtils {
 
-    private static final Jedis jedis = new Jedis("127.0.0.1", 6378);
+    private static final Jedis jedis = new  Jedis("intelligent_mattress_redis", 6379);
 
     private CacheUtils() {
     }
@@ -39,7 +39,9 @@ public class CacheUtils {
     }
 
     public static void setToken(String account, String token) {
-        jedis.set(String.format("token:%s", account), token, "NX","EX", 30 * 24 * 60 * 60);
+        final String key = String.format("token:%s", account);
+        jedis.set(key, token);
+        jedis.expire(key,30 * 24 * 60 * 60);
     }
 
     public static void refreshToken(String account) {
@@ -57,13 +59,8 @@ public class CacheUtils {
     }
 
     public static String makeToken(String account) {
-        String token = getToken(account);
-        if (token == null || token.isEmpty()) {
-            token = Base64.encodeBase64URLSafeString(getRandNum().getBytes());
+          final String  token = Base64.encodeBase64URLSafeString(getRandNum().getBytes());
             setToken(account, token);
-        }else {
-            refreshToken(account);
-        }
         return token;
     }
 }

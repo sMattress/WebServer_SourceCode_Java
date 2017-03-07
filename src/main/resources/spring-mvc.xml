@@ -17,8 +17,6 @@
     <!-- 注解扫描包 -->
     <context:component-scan base-package="com.mattress.controller"/>
 
-    <!--<mvc:view-controller path="/" view-name="redirect:/managers/login"/>-->
-
 
     <!-- 静态资源映射 -->
     <mvc:resources mapping="/images/**" location="/WEB-INF/images/"/>
@@ -27,6 +25,8 @@
     <mvc:resources mapping="/html/**" location="/WEB-INF/html/"/>
     <mvc:resources mapping="/fonts/**" location="/WEB-INF/fonts/"/>
     <mvc:default-servlet-handler/>
+
+    <mvc:view-controller path="/" view-name="index"/>
 
     <!-- 默认的注解映射的支持 -->
     <mvc:annotation-driven validator="validator"

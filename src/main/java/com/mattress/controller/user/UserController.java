@@ -84,23 +84,6 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/logout")
-	public AppResponse logout(@RequestParam String account, @RequestParam String timestamp,  @RequestParam String sign) {
-
-		final UserCustomerInfo user = userService.getUser(account);
-		if (user == null) {
-			return AppResponse.failure(ErrCodeMap.ACCOUNT_INVALID);
-		}
-
-		final AppResponse res = userService.validatesSign(account, UrlMap.LOGOUT, timestamp, sign);
-
-		if (res.getFlag() == 1) {
-			userService.setUserState(user, 0);
-		}
-
-		return res;
-	}
-
 	@GetMapping("/get/base_info")
 	public AppResponse getBaseInfo(@RequestParam String account, @RequestParam String timestamp, @RequestParam String sign) {
 
