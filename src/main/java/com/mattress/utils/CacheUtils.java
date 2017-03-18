@@ -5,14 +5,14 @@ import redis.clients.jedis.Jedis;
 
 public class CacheUtils {
 
-    private static final Jedis jedis = new  Jedis("intelligent_mattress_redis", 6379);
+    private static final Jedis jedis = new  Jedis("sMattress_Redis", 6379);
 
     private CacheUtils() {
     }
 
     private static String getRandNum() {
-        int randNum = 1 + (int)(Math.random() * ((999999 - 1) + 1));
-        return String.format("%d", randNum);
+        int randNum = (int) System.currentTimeMillis();
+        return String.valueOf(randNum & 0xFFFFF);
     }
 
     public static String getCode(String account) {

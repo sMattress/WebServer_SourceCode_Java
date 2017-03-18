@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IntelligentMattress" />
+        <module name="sMattress_WebServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="IntelligentMattress" target="1.8" />
+      <module name="sMattress_WebServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
