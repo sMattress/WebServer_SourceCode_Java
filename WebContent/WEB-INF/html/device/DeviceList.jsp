@@ -73,8 +73,10 @@
 												<td>${device.vcName}</td>
 												<td><c:if test="${device.IStatus==0}">
 														<span class="badge" style="background-color: gray;font-size: 15px">出厂</span>
-													</c:if> <c:if test="${device.IStatus==1}">
-														<span class="badge" style="background-color: green;font-size: 15px">正常</span>
+													</c:if> <c:if test="${device.IStatus==3}">
+														<span class="badge" style="background-color: orange;font-size: 15px">离线</span>
+													</c:if> <c:if test="${device.IStatus==4}">
+													<span class="badge" style="background-color: green;font-size: 15px">在线</span>
 													</c:if> <c:if test="${device.IStatus==2}">
 														<span class="badge" style="background-color: red;font-size: 15px">报废</span>
 													</c:if></td>

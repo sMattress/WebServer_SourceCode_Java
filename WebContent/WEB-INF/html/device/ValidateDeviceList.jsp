@@ -72,8 +72,10 @@
 											<tr>
 												<td>${validatedevices.IId}</td>
 												<td>${validatedevices.vcName}</td>
-												<td><c:if test="${validatedevices.IStatus==1}">
-														<span class="badge" style="background-color: green; font-size: 15px;">正常</span>
+												<td><c:if test="${validatedevices.IStatus==3}">
+														<span class="badge" style="background-color: orange; font-size: 15px;">离线</span>
+													</c:if><c:if test="${validatedevices.IStatus==4}">
+													<span class="badge" style="background-color: green; font-size: 15px;">在线</span>
 													</c:if>
 												<td>${validatedevices.TTime}</td>
 												<td><button type="button" 

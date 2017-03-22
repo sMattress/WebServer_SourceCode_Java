@@ -1,6 +1,5 @@
 package com.mattress.service.impl;
 
-import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -302,7 +301,7 @@ public class UserServiceImpl implements IUserService{
 			newBindShip.setFkCustomerId(user.getIId());
 			newBindShip.setFkDeviceId(device.getIId());
 			bindDao.save(newBindShip);
-			device.setIStatus(1);
+			device.setIStatus(3);
 			deviceDao.update(device);
 		}else {
 			if (bindShip == null) {
