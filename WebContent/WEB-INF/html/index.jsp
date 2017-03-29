@@ -6,12 +6,12 @@
     <title>智能理疗床垫</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://static.lesmarthome.com/smartmattress/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://static.lesmarthome.com/smartmattress/gallery.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://onblyvn75.bkt.clouddn.com/smartmattress/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://onblyvn75.bkt.clouddn.com/smartmattress/gallery.css" rel="stylesheet" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <script src="http://static.lesmarthome.com/smartmattress/jquery.min.js"></script>
-    <script type="text/javascript" src="http://static.lesmarthome.com/smartmattress/move-top.js"></script>
-    <script type="text/javascript" src="http://static.lesmarthome.com/smartmattress/easing.js"></script>
+    <script src="http://onblyvn75.bkt.clouddn.com/smartmattress/jquery.min.js"></script>
+    <script type="text/javascript" src="http://onblyvn75.bkt.clouddn.com/smartmattress/move-top.js"></script>
+    <script type="text/javascript" src="http://onblyvn75.bkt.clouddn.com/smartmattress/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -22,7 +22,7 @@
             });
         });
     </script>
-    <script type="text/javascript" src="http://static.lesmarthome.com/smartmattress/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="http://onblyvn75.bkt.clouddn.com/smartmattress/jquery.mixitup.min.js"></script>
     <script type="text/javascript">
         $(function() {
 
@@ -74,14 +74,14 @@
             <div class="logo">
                 <ul>
                     <li>
-                        <a href="index.jsp"><img src="http://static.lesmarthome.com/smartmattress/icon.png" alt="" style="width: 80%; max-width: 50px;"></a>
+                        <a href="index.jsp"><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/icon.png" alt="" style="width: 80%; max-width: 50px;"></a>
                     </li> &nbsp;&nbsp;&nbsp;
                     <li class="line"> | &nbsp;&nbsp;&nbsp;智能理疗床垫</li>
                     <div class="clear"> </div>
                 </ul>
             </div>
             <div class="menu">
-                <a class="toggleMenu" href="#"><img src="http://static.lesmarthome.com/smartmattress/nav_icon.png" alt="" /> </a>
+                <a class="toggleMenu" href="#"><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/nav_icon.png" alt="" /> </a>
                 <ul class="nav" id="nav">
                     <li class="current"><a href="#home">主页</a></li>
                     <li><a href="#features">特色</a></li>
@@ -89,7 +89,7 @@
                     <li><a href="#support">支持</a></li>
                     <div class="clear"></div>
                 </ul>
-                <script type="text/javascript" src="http://static.lesmarthome.com/smartmattress/responsive-nav.js"></script>
+                <script type="text/javascript" src="http://onblyvn75.bkt.clouddn.com/smartmattress/responsive-nav.js"></script>
             </div>
             <div class="clear"></div>
         </div>
@@ -128,7 +128,7 @@
                 <li><a href="#" class="">2</a></li>
             </ul>
         </div>
-        <script src="http://static.lesmarthome.com/smartmattress/jquery.wmuSlider.js"></script>
+        <script src="http://onblyvn75.bkt.clouddn.com/smartmattress/jquery.wmuSlider.js"></script>
         <script>
             $('.example1').wmuSlider();
         </script>
@@ -136,7 +136,7 @@
     <div class="test-monials-grids" id="features">
         <div class="wrap">
             <h3 class="m_2">特色</h3>
-            <div class="m_3"><span class="left_line1"> </span><img src="http://static.lesmarthome.com/smartmattress/heart.png" alt="" /><span class="right_line1"> </span></div>
+            <div class="m_3"><span class="left_line1"> </span><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/heart.png" alt="" /><span class="right_line1"> </span></div>
             <div class="gallery autoplay items-3">
                 <div id="item-1" class="control-operator"></div>
                 <div id="item-2" class="control-operator"></div>
@@ -144,19 +144,19 @@
                 <figure class="item">
                     <div class="box1">
                         <p class="m_5">随时随地控制控制床垫，让您每次睡眠前都能有一个舒适的温度</p>
-                        <img src="http://static.lesmarthome.com/smartmattress/page_0.jpg" style="width: 80%; max-width: 800px">
+                        <img src="http://onblyvn75.bkt.clouddn.com/smartmattress/page_0.jpg" style="width: 80%; max-width: 800px">
                     </div>
                 </figure>
                 <figure class="item">
                     <div class="box1">
                         <p class="m_5">定制个人睡眠习惯，更能随着您的睡眠智能调节温度，守护您每一个舒适的夜晚</p>
-                        <img src="http://static.lesmarthome.com/smartmattress/page_1.jpg" style="width: 80%; max-width: 800px">
+                        <img src="http://onblyvn75.bkt.clouddn.com/smartmattress/page_1.jpg" style="width: 80%; max-width: 800px">
                     </div>
                 </figure>
                 <figure class="item">
                     <div class="box1">
                         <p class="m_5">远红外理疗，促进人体机能，享受来自床垫的生命之光</p>
-                        <img src="http://static.lesmarthome.com/smartmattress/page_2.jpg" style="width: 80%; max-width: 800px">
+                        <img src="http://onblyvn75.bkt.clouddn.com/smartmattress/page_2.jpg" style="width: 80%; max-width: 800px">
                     </div>
                 </figure>
             </div>
@@ -165,11 +165,11 @@
     <div class="facts" id="download">
         <div class="wrap">
             <h3 class="m_2">下载</h3>
-            <div class="m_3"><span class="left_line2"> </span><img src="http://static.lesmarthome.com/smartmattress/heart1.png" alt="" /><span class="right_line2"> </span></div>
+            <div class="m_3"><span class="left_line2"> </span><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/heart1.png" alt="" /><span class="right_line2"> </span></div>
             <div class="facts_box">
                 <div class="col_1_of_f span_1_of_f">
                     <a href="https://smartmattress.lesmarthome.com/app/download?platform=android">
-                        <img src="http://static.lesmarthome.com/smartmattress/android.png" style="width: 40%; max-width: 128px;">
+                        <img src="http://onblyvn75.bkt.clouddn.com/smartmattress/android.png" style="width: 40%; max-width: 128px;">
                         </img>
                     </a>
                     <div class="clock">
@@ -178,7 +178,7 @@
                 </div>
                 <div class="col_1_of_f span_1_of_f">
                     <a href="https://smartmattress.lesmarthome.com/app/download?platform=ios">
-                        <img src="http://static.lesmarthome.com/smartmattress/ios.png" style="width: 40%; max-width: 128px;"> </img>
+                        <img src="http://onblyvn75.bkt.clouddn.com/smartmattress/ios.png" style="width: 40%; max-width: 128px;"> </img>
                     </a>
                     <div class="clock">
                         <p>iOS</p>
@@ -191,7 +191,7 @@
     <div class="footer-top" id="support">
         <div class="wrap">
             <h3 class="m_2">技术支持</h3>
-            <div class="m_3"><span class="left_line1"> </span><img src="http://static.lesmarthome.com/smartmattress/heart.png" alt="" /><span class="right_line1"> </span></div>
+            <div class="m_3"><span class="left_line1"> </span><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/heart.png" alt="" /><span class="right_line1"> </span></div>
             <p class="m_5">如果您有任何使用上的问题欢迎咨询掌上明珠</p>
             <div class="project">
                 <div class="rsidebar span_1_of_2">
@@ -228,7 +228,7 @@
 
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
-    <script src="http://static.lesmarthome.com/smartmattress/jquery.scrollTo.js"></script>
+    <script src="http://onblyvn75.bkt.clouddn.com/smartmattress/jquery.scrollTo.js"></script>
     <script type="text/javascript">
   		function is_weixin() {
   		    var ua = navigator.userAgent.toLowerCase();
@@ -240,7 +240,7 @@
   		}
   		var isWeixin = is_weixin();
   		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
-  		var weixinTip = $('<div id="weixinTip"><p><img src="http://static.lesmarthome.com/smartmattress/live_weixin.png" alt="微信打开"/></p></div>');
+  		var weixinTip = $('<div id="weixinTip"><p><img src="http://onblyvn75.bkt.clouddn.com/smartmattress/live_weixin.png" alt="微信打开"/></p></div>');
 
   		if(isWeixin){
   			$("body").append(weixinTip);

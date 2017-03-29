@@ -40,9 +40,9 @@ public class DeviceServiceImpl extends BaseServiceImpl<DeviceInfo, Serializable>
 	public Page<DeviceInfo> queryByStatus(int currentPage, int pageSize, int status){
 		Page<DeviceInfo> page = new Page<>();	
 		int offset = page.countOffset(currentPage, pageSize);
-		List<DeviceInfo> deviceList = deviceDao.queryByStatus(offset, pageSize,status);
+		List<DeviceInfo> deviceList = deviceDao.queryByStatus(offset, pageSize, status);
 		int deviceAllRow = deviceDao.queryByStatus(status).size();
-		System.out.println(deviceAllRow);
+		System.out.println("deviceAllRow => " + deviceAllRow);
 		page.setPageNo(currentPage);
 		page.setPageSize(pageSize);
 		page.setTotalRecords(deviceAllRow);

@@ -59,12 +59,12 @@ public class DeviceDaoImpl extends BaseDaoImpl<DeviceInfo, Serializable> impleme
 	}
 	@Override
 	public List<DeviceInfo> queryByStatus(int status) {
-		Session session = sessionFactory.openSession();
-		TypedQuery<DeviceInfo> query = session.createQuery("SELECT t FROM DeviceInfo t WHERE t.IStatus = ?",DeviceInfo.class);
-		query.setParameter(0,status);	
-	    List<DeviceInfo> result = queryForPage(query);
-	    session.close();
-	    return result;
+//		Session session = sessionFactory.openSession();
+//		TypedQuery<DeviceInfo> query = session.createQuery("SELECT t FROM DeviceInfo t WHERE t.IStatus = ?",DeviceInfo.class);
+//		query.setParameter(0,status);
+//	    List<DeviceInfo> result = queryForPage(query);
+//	    session.close();
+	    return queryByStatus(0, Integer.MAX_VALUE, status);
 	}
 	@Override
 	public void changeDeviceStatus(DeviceInfo deviceinfo) {
