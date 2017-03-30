@@ -172,9 +172,9 @@ public class UserServiceImpl implements IUserService{
 		}
 
 		final String code = CacheUtils.getCode(account);
-		if (code == null || code.isEmpty()) {
-			return AppResponse.failure(ErrCodeMap.PLATFORM_INVALID);
-		}
+//		if (code == null || code.isEmpty()) {
+//			return AppResponse.failure(ErrCodeMap.PLATFORM_INVALID);
+//		}
 
 		final String securePassword = DigestUtils.md5Hex(user.getVcPassword() + code);
 		return StringUtils.equals(securePassword, password) ? AppResponse.success() : AppResponse.failure(ErrCodeMap.PASSWORD_INVALID);

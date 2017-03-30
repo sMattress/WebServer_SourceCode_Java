@@ -31,8 +31,7 @@ public class UserController {
 			return AppResponse.failure(ErrCodeMap.ACCOUNT_INVALID);
 		}
 
-		final String code =  CacheUtils.getCode(account);
-		CacheUtils.setCode(account, code);
+		final String code =  CacheUtils.makeCode(account);
 		return AppResponse.success().addParam(new HashMap<String, String>() {{
 			put("code", code);
 		}});

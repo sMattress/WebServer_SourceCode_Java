@@ -6,6 +6,8 @@ import redis.clients.jedis.Jedis;
 public class CacheUtils {
 
     private static final Jedis jedis = new  Jedis("sMattress_Redis", 6379);
+//    private static final Jedis jedis = new  Jedis("localhost", 6379);
+
 
     private CacheUtils() {
     }
@@ -15,13 +17,16 @@ public class CacheUtils {
         return String.valueOf(randNum & 0xFFFFF);
     }
 
-    public static String getCode(String account) {
-        String code = jedis.get(String.format("code:%s",account));
-        if (code == null || code.isEmpty()) {
-            code = getRandNum();
-            setCode(account, code);
-        }
+    public static String makeCode(String account) {
+        final String code = getRandNum();
+        setCode(account, code);
         return code;
+    }
+
+    public static String getCode(String account) {
+        final String code = jedis.get(String.format("code:%s",account));
+        jedis.del(String.format("code:%s", account));
+        return code == null || code.isEmpty() ? "" : code;
     }
 
     public static void setCode(String account, String code) {
