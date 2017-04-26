@@ -143,4 +143,5 @@ public interface IUserService {
 	 * @return
 	 */
 	AppResponse updateUserDeviceInfo(UserCustomerInfo user, Map<String, String[]> params);
+
 }

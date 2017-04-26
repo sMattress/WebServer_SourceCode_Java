@@ -1,9 +1,10 @@
 package com.mattress.controller.sys;
 
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mattress.controller.user.AppResponse;
+import com.mattress.model.DeviceInfo;
+import com.mattress.model.UserBindDevice;
 import com.mattress.model.UserCustomerInfo;
 import com.mattress.service.IUserService;
 import com.mattress.utils.AppDeployConfig;
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.*;
 import java.util.HashMap;
 
 @RestController
@@ -26,6 +26,33 @@ public class SysController {
     @Autowired
     @Qualifier("userServiceImpl")
     private IUserService userService;
+
+    @GetMapping("/auth")
+    public AppResponse auth(@RequestParam String from, @RequestParam String to) {
+
+        // 只允许：
+        //   用户 => 硬件
+        //   硬件 => 用户
+        final UserCustomerInfo fromUser = userService.getUser(from);
+        final DeviceInfo toDevice = userService.getDevice(to);
+        if (fromUser != null && toDevice != null) {
+            final UserBindDevice bindShip = userService.getBindShip(fromUser, toDevice);
+            if (bindShip != null) {
+                return AppResponse.success();
+            }
+        }
+
+        final DeviceInfo fromDevice = userService.getDevice(from);
+        final UserCustomerInfo toUser = userService.getUser(to);
+        if (fromDevice != null && toUser != null) {
+            final UserBindDevice bindShip = userService.getBindShip(toUser, fromDevice);
+            if (bindShip != null) {
+                return AppResponse.success();
+            }
+        }
+
+        return AppResponse.failure(ErrCodeMap.PERMISSION_DENIED);
+    }
 
     @GetMapping("/validate/time")
     public AppResponse validateTime() {

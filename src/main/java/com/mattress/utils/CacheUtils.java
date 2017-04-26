@@ -6,8 +6,6 @@ import redis.clients.jedis.Jedis;
 public class CacheUtils {
 
     private static final Jedis jedis = new  Jedis("sMattress_Redis", 6379);
-//    private static final Jedis jedis = new  Jedis("localhost", 6379);
-
 
     private CacheUtils() {
     }
@@ -30,7 +28,8 @@ public class CacheUtils {
     }
 
     public static void setCode(String account, String code) {
-        jedis.setex(String.format("code:%s", account), 60, code);
+        jedis.set(String.format("code:%s", account), code);
+        jedis.expire(String.format("code:%s", account),60);
     }
 
     public static void removeCode(String account) {
